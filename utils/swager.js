@@ -13,10 +13,10 @@ const options = {
     },
     servers: [
       {
-        url: process.env.NODE_ENV== "development"?  "http://localhost:3000":"https://money-manager-api-p993.onrender.com",
+        url: process.env.NODE_ENV==="development"?  "http://localhost:3000":"https://money-manager-api-p993.onrender.com",
       },
       {
-        url: "https://your-domain.onrender.com/api",
+        url: "https://money-manager-api-p993.onrender.com",
       },
     ],
     components: {
