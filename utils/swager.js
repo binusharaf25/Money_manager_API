@@ -1,5 +1,7 @@
 import swaggerJsdoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
+import dotenv from 'dotenv'
+dotenv.config()
 
 const options = {
   definition: {
@@ -11,7 +13,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:3000",
+        url: process.env.NODE_ENV== "development"?  "http://localhost:3000":"https://money-manager-api-p993.onrender.com",
       },
       {
         url: "https://your-domain.onrender.com/api",
